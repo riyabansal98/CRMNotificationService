@@ -12,7 +12,7 @@ exports.acceptNotificationRequest = async(req, res) => {
 
     try {
 
-        const notification = await(ticketNotificationModel.create(notificationObject));
+        const notification = await(TicketNotificationModel.create(notificationObject));
 
         res.status(201).send({
             requestId: notification.ticketId,
